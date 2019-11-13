@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="products.js">  </script>
+    <script>
+        function checkQuatityTextbox() {
+            err_array = isNonNegInt(quantity_textbox.value, true);
+            qty_textbox_message.innerHTML = err_array.join(',');
+        }
+        function isNonNegInt(q, returnErrors = false) {
+            errors = []; //assume no errors at first 
+            if (Number(q) != q) errors.push('Not a number!');
+            if (q < 0) errors.push('Negative value!');
+            if (parseInt(q) != q) errors.push('Not an Intager!')
+            return returnErrors ? errors : (error.Length == 0);
+        }
+        function displayPurchase() {
+            if (isNonNegInt(quantity_textbox.value)) {
+                document.write(`thank you for ordering ${quantity_textbox.value} things!`);
+            } else {
+                alert('Please enter a valid quantity!')
+            }
+        }
+    //text box error; original from lab 12
+
+    </script>
+    <meta charset="UTF-8">
+    <link href="CSS.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+</head>
+
+<body>
+    <h1>Welcome to the Game Store!</h1>
+    <!--header/title of the site for the store -->
+    <script>
+        for (i = 0; i < items.length; i++) {
+            document.write(`
+        <div>
+            <img src="${items[i].image}"> 
+            <br>
+                <p>
+           <h2> ${items[i].title} </h2>
+          </p>
+          <p>
+            <h3>
+            $${items[i].Price}
+            </h3>
+            </p>
+            <p>
+            <input type="text" value="0" id= "Quantity_textbox" onekeyup="checkQuantityTextbox()">
+            </p>
+            </div>
+            `);
+
+        }
+    </script>
+
+    <!--For loop for displaying products-->
+    <form name="quantity_form" action="" method="POST">
+        <input type="submit" value="Purchase" onclick="displayPurchase();">
+        <!-- Above is taken and adapted from Lab 12 -->
+</body>
+
+</html>

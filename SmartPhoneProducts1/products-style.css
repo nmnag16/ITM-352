@@ -1,0 +1,45 @@
+body 
+{
+    width: 800px; 
+    margin: 0 auto;
+}
+
+/*body margin*/
+
+h1
+{ 
+    text-align: center;
+}
+
+/*header 1*/ 
+
+h2
+{ 
+    text-align: center;
+}
+/*header 2*/
+img
+{
+    width: 200px;
+    height: 200px;
+}
+/*image dimentions*/
+
+main 
+{
+    background-image: url(../SmartPhoneProducts1/images/phone_globe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+/*stypling products dispay*/
+
+div 
+{
+    border: 5px solid black;
+    display: flex;
+}
+
+/*border around prducts*/
