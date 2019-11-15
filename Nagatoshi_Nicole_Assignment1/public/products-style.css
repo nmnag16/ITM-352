@@ -32,3 +32,16 @@ img{
 }
 /*image size and style*/
 
+table{
+    border: 3px double black;
+    width: 1000px;
+    height: felx;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 1px;
+    border-color: black;
+    border-style: double;
+}
+/*table style*/

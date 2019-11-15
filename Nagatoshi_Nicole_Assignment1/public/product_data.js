@@ -1,4 +1,4 @@
-var items = [
+var products = [
     {
         "title": "Used systems",
         "Price": 100.00,
@@ -25,3 +25,6 @@ var items = [
         "image": "./images/Preorder.jpg"
     }
 ];
+if (typeof module != 'undefined') {
+    module.exports.products = products;
+    }
