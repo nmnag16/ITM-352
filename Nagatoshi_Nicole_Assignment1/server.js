@@ -11,6 +11,6 @@ app.get('/invoice.html', function(req, res, next) {
     next();
 });
 
-app.use(express.static('./static'));
+app.use(express.static('./public'));
 
 var listener = app.listen(8080, () => { console.log('server started listening on port ' + listener.address().port) });
