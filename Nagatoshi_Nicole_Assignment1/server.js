@@ -1,16 +1,56 @@
+//server acts as a middle man
+const querystring = require('querystring');
+
 var express = require('express');
-const querystring = require('querystring'); // requiring a query string - string of whatever is written in textbox
-const product_data = require('./public/product_data.js'); //using data from product_data.js
+var myParser = require("body-parser");
+var products = require("./public/product_data.js");
 
 var app = express();
-
-app.get('/invoice.html', function(req, res, next) {
-    if(typeof req.query['purchase_submit'] != 'undefined') {
-        console.log(Date.now() + ': Purchase made from ip ' + req.ip + ' data: ' + JSON.stringify(req.query));
-    }
-    next();
+app.all('*', function (request, response, next) {
+   console.log(request.method + ' to ' + request.path);
+   next();
 });
 
-app.use(express.static('./public'));
+app.use(myParser.urlencoded({ extended: true }));
+//intercept purchase submission form, if good give an invoice, otherwise send back to order page
+app.get("/invoice", function (request, response) {
+   //check if quantity data is valid
+   //look up request.query
+   params = request.query;
+   console.log(params);
+   if (typeof params['purchase_submit'] != 'undefined') {
+      has_errors = false; // assume quantities are valid from the start
+      total_qty = 0; // need to check if something was selected so we will look if the total > 0
+      for (i = 0; i < products.length; i++) {
+         if (typeof params[`quantity${i}`] != 'undefined') {
+            a_qty = params[`quantity${i}`];
+            total_qty += a_qty;
+            if (!isNonNegInt(a_qty)) {
+               has_errors = true; // oops, invalid quantity
+            }
+         }
+      }
+      qstr = querystring.stringify(request.query);
+      // Now respond to errors or redirect to invoice if all is ok
+      if (has_errors || total_qty == 0) {
+         //if quantity data is not valid, send them back to product display
+         qstr = querystring.stringify(request.query);
+         response.redirect("index.html?" + qstr);
+      } else { // all good to go!
+         response.redirect("invoice.html?" + qstr);
+      }
+   }
+});
+//if quantity data valid, send them to the invoice
 
-var listener = app.listen(8080, () => { console.log('server started listening on port ' + listener.address().port) });
+app.use(express.static('./public'));
+app.listen(8080, () => console.log(`listening on port 8080`));
+
+function isNonNegInt(q, returnErrors = false) {
+   errors = []; // assume no errors at first
+   if (q == "") { q = 0; }
+   if (Number(q) != q) errors.push('Not a number!'); // Check if string is a number value
+   if (q < 0) errors.push('Negative value!'); // Check if it is non-negative
+   if (parseInt(q) != q) errors.push('Not an integer!'); // Check that it is an integer
+   return returnErrors ? errors : (errors.length == 0);
+}
