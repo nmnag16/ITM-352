@@ -8,29 +8,38 @@
 
     <link href="products-style.css" rel="stylesheet">
 
-
+ <div class="container">
     <title>login
     </title>
+<script>
+    let params = (new URL(document.location)).searchParams; 
+    window.onload = function () { 
+        if (params.has('LogError')) { 
+            login['username'].value = params.get('username');
+            login['password'].value = params.get('password');
+            alert('Invalid Username or Password');
+        }
+    }
+</script>
 </head>
 <form name="login" method="POST">
     <H1>Login Page</H1> <br> <br>
-    <div class="container">
+   
             <label for="username"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="username" onkeyup="" required><br>
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" onkeyup="" required><br>
     <br>
     <input type="submit" name="login" value="Login">
-</div>
 </form>
 <script>
 login.action="./login.html" + document.location.search;
 </script>
-
-<br>
+</div>
     <input type="button" name="newuser" value="New User" onclick="window.location='./register.html' + document.location.search;">
      
 </table>
+
 
 <!--reg form from codify academy<input id="Confirmpassword" placeholder="confirm password">
     <input id="Newemailaddress" placeholder="email address">

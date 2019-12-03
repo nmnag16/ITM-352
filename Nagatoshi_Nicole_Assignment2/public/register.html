@@ -15,19 +15,16 @@ input {
   margin-top: 6px;
   margin-bottom: 16px;
 }
-
 /* Style the submit button */
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
 }
-
 /* Style the container for inputs */
 .container {
   background-color: #f1f1f1;
   padding: 20px;
 }
-
 /* The message box is shown when the user clicks on the password field */
 #message {
   display:none;
@@ -36,29 +33,25 @@ input[type=submit] {
   position: relative;
   padding: 20px;
   margin-top: 10px;
+  width: 953px;
 }
-
 #message p {
   padding: 10px 35px;
   font-size: 18px;
 }
-
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
   color: green;
 }
-
 .valid:before {
   position: relative;
   left: -35px;
   content: "✔";
 }
-
 /* Add a red text color and an "x" when the requirements are wrong */
 .invalid {
   color: red;
 }
-
 .invalid:before {
   position: relative;
   left: -35px;
@@ -67,6 +60,16 @@ input[type=submit] {
 </style>
 </head>
 <body>
+        <script>
+              function checkpassword() 
+              {var p=S.password.value;
+              var cp=S.confirm.value;
+              if(p==cp) {}
+              else {
+              alert("Passwords Don't Match. Please retype")
+              response.redirect("register.html?");}}
+              
+              </script>
 
 <div class="container">
       <legend> Registration Page </legend>
@@ -77,18 +80,18 @@ input[type=submit] {
         <!-- Help from https://www.w3schools.com/howto/howto_css_login_form.asp -->
 <!-- Code for Maximum Length of Text: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text -->
 
-  <form action="/invoice.html" class="pure-form"> 
+  <form action="./invoice.html" class="pure-form" name="S" Action="" Method="POST"> 
     <label for="fullname"><b>Full name</b></label>
     <input type="text" name="fullname" maxlength= "30" onkeyup="" required>
     <label for="email"><b>Email Address</b></label>
     <input type="email" name="email" onkeyup="" required>
-    <label for="usrname"><b>Username</b></label>
-    <input type="text" id="usrname" name="usrname" required>
+    <label for="username"><b>Username</b></label>
+    <input type="text" id="username" name="username" required>
     <label for="password"><b>Password</b></label>
     <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
     <label for="confirm"><b>Confirm Password</b></label>
     <input type="password" id="confirm" name="confirm" onkeyup="" match= "password" required>
-    <input type="submit" value="Register" class= "pure-button  pure-button-primary">
+    <input type="submit" value="Register" class= "pure-button  pure-button-primary" value="checkpassword" onsubmit="checkpassword()">
   </form>
 </feildset>
 
@@ -106,17 +109,14 @@ var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
-
 // When the user clicks on the password field, show the message box
 myInput.onfocus = function() {
   document.getElementById("message").style.display = "block";
 }
-
 // When the user clicks outside of the password field, hide the message box
 myInput.onblur = function() {
   document.getElementById("message").style.display = "none";
 }
-
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
   // Validate lowercase letters
@@ -138,7 +138,6 @@ myInput.onkeyup = function() {
     capital.classList.remove("valid");
     capital.classList.add("invalid");
   }
-
   // Validate numbers
   var numbers = /[0-9]/g;
   if(myInput.value.match(numbers)) {  
@@ -162,4 +161,3 @@ myInput.onkeyup = function() {
 
 </body>
 </html>
-

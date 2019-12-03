@@ -20,8 +20,13 @@ div {
     align-content: center;
     margin: auto;
     background-color: whitesmoke;
-
 }
+#container {
+    background-color: whitesmoke;
+    opacity: 80%;
+}
+
+
 /*Div border and display type*/
 
 img{
