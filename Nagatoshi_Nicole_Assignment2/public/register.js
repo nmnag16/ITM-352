@@ -6,7 +6,11 @@ function required ()
         alert ("please input a value")
         return false;
     }
-    else if (password != confirm)
+}
+
+function checkpassword()
+{
+  if (password != confirm)
     {
         onsubmit = "window.location='./register' + document.location.search";
         return false;
@@ -16,6 +20,10 @@ function required ()
       onsubmit = "window.location='./invoice.html' + document.location.search";
       return true;
     }
+}
+
+{
+  
 }
  //https://codepen.io/diegoleme/pen/surIK
 //var password = document.getElementById("password")

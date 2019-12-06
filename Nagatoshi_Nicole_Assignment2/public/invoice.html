@@ -1,6 +1,7 @@
 <script src="./product_data.js" type="text/javascript"></script>
 <script>
   let params = (new URL(document.location)).searchParams;
+  GET = {};
   var quantities = [];
   // form was submitted so process the invoice
   if (params.has('purchase_submit')) {
@@ -16,7 +17,18 @@
   console.log(quantities);
 
 //from WOD invoice 2
-
+params.forEach(function (value, key) { GET[key] = value });
+window.onload = function () { 
+    if (params.has('username')) { 
+      alert('Thank you for your purchase ' + params.get('name')); 
+    }
+    
+    else { 
+      alert('Please log in.'); 
+      window.location='/login.html' + window.location.search; 
+    }
+  }
+  subtotal = 0;
 </script>
 
 <!DOCTYPE html>
