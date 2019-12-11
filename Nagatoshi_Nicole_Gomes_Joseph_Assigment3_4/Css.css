@@ -422,6 +422,14 @@ p{
   height: 400px; /* Should be removed. Only for demonstration */
 }
 
+.column2 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+  text-align: center;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -440,4 +448,9 @@ p{
   margin:auto;
   font-family: cursive,fantasy, sans-serif;
   font-size: 20px;
+}
+
+.media{
+  width: 100px;
+  height: 100px;
 }
