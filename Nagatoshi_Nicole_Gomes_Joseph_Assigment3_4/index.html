@@ -1,0 +1,77 @@
+<!--User homepage-->
+<!--Need: Server/JS/Arrays/Loops/Cookies/IO/Validation-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="Css.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+<ul>
+    <li>
+<body>
+        <button class="open-button" onclick="openForm()">Login</button>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+    </li>
+
+<li>
+        <button class="open-button" onclick="openForm2()">New User</button>
+
+        <div class="form-popup" id="myForm2">
+          <form action="/action_page.php" class="form-container">
+            <h1>Register</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="cpsw"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Enter Password" name="cpsw" required>
+        
+            <button type="submit" class="btn">Complete Registration</button>
+            <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+          </form>
+        </div>
+        </li>
+    </ul>
+        <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+
+        function openForm2() {
+          document.getElementById("myForm2").style.display = "block";
+        }
+        
+        function closeForm2() {
+          document.getElementById("myForm2").style.display = "none";
+        }
+        </script>
+        
+        </body>
+</html>
