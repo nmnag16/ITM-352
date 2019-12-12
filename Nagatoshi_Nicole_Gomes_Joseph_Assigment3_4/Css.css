@@ -4,7 +4,7 @@ header{
     width: 100%;
     height: 220px;
     text-align: center;
-    font-family: fantasy,cursive,sans-serif;
+    font-family: fantasy,cursive,Brush Script MT,Brush Script MT,sans-serif;
     /*background: rgba(255,255,255,.5);*/
     font-size: 65px;
     overflow: hidden;
@@ -17,7 +17,7 @@ header{
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica,Brush Script MT ,Brush Script MT,sans-serif;
     background-image: url(./images/body.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -149,7 +149,7 @@ li a:hover {
   background-color: black;
   top: 0;
   width: 100%;
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT, sans-serif;
 }
 
 .navbar a {
@@ -176,7 +176,7 @@ li a:hover {
     background-color:black;
     opacity: 0.8;
     width: 250px;
-    font-family: cursive,fantasy, sans-serif;
+    font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
 
 }
 
@@ -205,7 +205,7 @@ button {
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-    font-family: cursive,fantasy, sans-serif;
+    font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
     display: block;
     position: relative;
     font-size: medium;
@@ -220,7 +220,7 @@ button:hover {
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
   display: block;
   position: relative;
 }
@@ -242,7 +242,7 @@ img.avatar {
 
 .container {
   padding: 28px;
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
 }
 
 span.psw {
@@ -325,7 +325,7 @@ hr {
     width: 100%;
     margin: auto;
     opacity: 0.8;
-    font-family: cursive,fantasy, sans-serif;
+    font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
     display: block;
     position: relative;
     font-size: medium;
@@ -340,7 +340,7 @@ hr {
   width: 100%;
   margin: auto;
   opacity: 0.8;
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
   display: block;
   position: relative;
 }
@@ -359,7 +359,7 @@ a {
 
 .reg{
   background-color: rgba(255,255,255,.8);
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
   margin: auto;
   max-width: 1000px;
   padding: 10px;
@@ -368,7 +368,7 @@ a {
 /*some general display items*/
 .display{
   background-color: rgba(255,255,255,.8);
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
   margin: auto;
   width: 100%;
   padding: 10px;
@@ -377,12 +377,12 @@ a {
 }
 
 h1{
-  font-family: fantasy,cursive,sans-serif;
+  font-family: fantasy,cursive,Brush Script MT,Brush Script MT,sans-serif;
   font-size: 50px;
 }
 
 h2{
-  font-family: fantasy,cursive,sans-serif;
+  font-family: fantasy,cursive,Brush Script MT,Brush Script MT,sans-serif;
   font-size: 30px;
 }
 
@@ -392,7 +392,7 @@ h2{
     width: 100%;
     height: 935px;
     text-align: center;
-    font-family: fantasy,cursive,sans-serif;
+    font-family: fantasy,cursive,Brush Script MT,Brush Script MT,sans-serif;
     /*background: rgba(255,255,255,.5);*/
     font-size: 90px;
     overflow: hidden;
@@ -406,7 +406,7 @@ p{
   text-align: center;
   width: 700px;
   margin:auto;
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
   font-size: 20px;
 }
 
@@ -446,7 +446,7 @@ p{
   text-align: left;
   width: 700px;
   margin:auto;
-  font-family: cursive,fantasy, sans-serif;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MTsans-serif;
   font-size: 20px;
 }
 
