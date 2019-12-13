@@ -454,3 +454,15 @@ p{
   width: 100px;
   height: 100px;
 }
+
+.card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.height
+{
+  height: 100%;
+}

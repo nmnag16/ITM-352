@@ -1,3 +1,5 @@
+<script scr="./punchcard.js" type="text/javescript"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,10 +26,80 @@
 </div>
 <header>
     Welcome Back (name)
+
 </header>
 </div>
 
 <body>
+    <form name="punchcard_form" action="" method="GET">
+        <br>
+
+        <div class="display">
+            <br>
+            <Section class="card"><img onclick="changeImage()" id="movingCards" class="card"
+                    src="./images/StampCardNon.jpg" /></Section>
+            <script>
+                var card = [
+                    {
+                        "title": "New Punch card",
+                        "image": "./images/StampCardNon.jpg"
+                    },
+                    {
+                        "title": "One Punch",
+                        "image": "./images/StampCardOne.jpg"
+                    },
+                    {
+                        "title": "Two Punch",
+                        "image": "./images/StampCardTwo.jpg"
+                    },
+                    {
+                        "title": "Three Punch",
+                        "image": "./images/StampCardThree.jpg"
+                    },
+                    {
+                        "title": "Four Punch",
+                        "image": "./images/StampCardFour.jpg"
+                    },
+                    {
+                        "title": "Five Punch",
+                        "image": "./images/StampCardFive.jpg"
+                    },
+                    {
+                        "title": "Six Punch",
+                        "image": "./images/StampCardSix.jpg"
+                    },
+                    {
+                        "title": "Seven Punch",
+                        "image": "./images/StampCardSeven.jpg"
+                    },
+                    {
+                        "title": "Eight Punch",
+                        "image": "./images/StampCardEight.jpg"
+                    },
+                    {
+                        "title": "Nine Punch",
+                        "image": "./images/StampCardNine.jpg"
+                    },
+                    {
+                        "title": "FREE",
+                        "image": "./images/StampCardFull.jpg"
+                    },
+                ];
+                let index = 0;
+                function changeImage() {
+                    if (index == 10) {
+                        index = 0;
+                    } else {
+                        index += 1;
+                    }
+                    document.getElementById("movingCards").src = card[index].image;
+                }
+            </script>
+            <br>
+        </div>
+
+
 </body>
+</form>
 
 </html>
