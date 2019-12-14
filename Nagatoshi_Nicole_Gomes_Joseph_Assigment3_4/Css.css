@@ -502,6 +502,20 @@ p{
   opacity: 90%;
 }
 
+.dispic1 {
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin: 58px;
+}
+
+.dispic2 {
+  width: 40%;
+  height: 40%;
+  float: right;
+  margin: 58px;
+}
+
 .menubody1 {
   text-align: left;
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
