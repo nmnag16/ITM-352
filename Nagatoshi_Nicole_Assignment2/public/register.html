@@ -71,39 +71,39 @@
 
 <body>
     <script>
-window.onload = function (){
-if (params.has('errors')){
-    register['name'].value = params.get('name');
-    register['email'].value = params.get('email');
-    register['username'].value =params.get('username');
-    register['password'].value = params.get('password');
-    register['confirm'].value = params.get('confirm');
+        window.onload = function () {
+            if (params.has('errors')) {
+                register['name'].value = params.get('name');
+                register['email'].value = params.get('email');
+                register['username'].value = params.get('username');
+                register['password'].value = params.get('password');
+                register['confirm'].value = params.get('confirm');
 
-    alert  ('you have errors: \n'  + params.get('errors'));
-}
+                alert('you have errors: \n' + params.get('errors'));
+            }
 
-if (params.has('nameerrors')) { 
-            var nameerrors = params.get('nameerrors'); 
-            document.getElementById("fullname1").innerHTML = nameerrors; 
+            if (params.has('nameerrors')) {
+                var nameerrors = params.get('nameerrors');
+                document.getElementById("fullname1").innerHTML = nameerrors;
+            }
+            if (params.has('usererrors')) {
+                var usererrors = params.get('usererrors');
+                document.getElementById("username1").innerHTML = usererrors;
+            }
+            if (params.has('passerrors')) {
+                var passerrors = params.get('passerrors');
+                document.getElementById("password1").innerHTML = passerrors;
+            }
+            if (params.has('confirmerrors')) {
+                var confirmerrors = params.get('confirmerrors');
+                document.getElementById("confirm1").innerHTML = confirmerrors;
+            }
+            if (params.has('emailerrors')) {
+                var emailerrors = params.get('emailerrors');
+                document.getElementById("email").innerHTML = emailerrors;
+            }
         }
-        if (params.has('usererrors')) { 
-            var usererrors = params.get('usererrors'); 
-            document.getElementById("username1").innerHTML = usererrors; 
-        }
-        if (params.has('passerrors')) { 
-            var passerrors = params.get('passerrors'); 
-            document.getElementById("password1").innerHTML = passerrors; 
-        } 
-        if (params.has('confirmerrors')) { 
-            var confirmerrors = params.get('confirmerrors'); 
-            document.getElementById("confirm1").innerHTML = confirmerrors; 
-        } 
-        if (params.has('emailerrors')) { 
-            var emailerrors = params.get('emailerrors'); 
-            document.getElementById("email").innerHTML = emailerrors; 
-        }
-        }
-                
+
        // function checkpassword() {
             //var p = S.password.value;
             //var cp = S.confirm.value;
@@ -113,7 +113,7 @@ if (params.has('nameerrors')) {
                 //document.location("register.html?");
             //}
       //  }
-    
+
 
     </script>
 
@@ -140,7 +140,7 @@ if (params.has('nameerrors')) {
                 <label for="confirm"><b>Confirm Password</b></label>
                 <input type="password" id="confirm" name="confirm" onkeyup="" match="password" required>
                 <input type="submit" value="Register" class="pure-button  pure-button-primary" value="checkpassword"
-                    onsubmit="checkpassword()"  name="register">
+                    onsubmit="checkpassword()" name="register">
             </form>
         </feildset>
 

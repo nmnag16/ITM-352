@@ -365,6 +365,14 @@ a {
   padding: 10px;
 }
 
+.reg2{
+  background-color: rgba(255,255,255,.8);
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
+  margin: auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
 /*some general display items*/
 .display{
   background-color: rgba(255,255,255,.8);
