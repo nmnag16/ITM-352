@@ -474,3 +474,50 @@ p{
 {
   height: 100%;
 }
+
+
+/*Menu CSS*/
+
+.menuhead1{
+  background: #333333;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
+  font-size: 60px;
+  text-align: left;
+  color: white;
+  width: 75%;
+  height: 90px;
+ text-indent:10%;
+ opacity: 90%;
+}
+
+.menuhead2{
+  background: #333333;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
+  font-size: 60px;
+  color: white;
+  width: 75%;
+  height: 90px;
+  text-indent:-30%;
+  float:right;
+  opacity: 90%;
+}
+
+.menubody1 {
+  text-align: left;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
+  font-size: 40px;
+  width: 100%;
+}
+
+.menubody2 {
+  text-align: right;
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
+  font-size: 40px;
+  width: 100%;
+}
+
+.discription{
+  font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
+  font-size: 20px;
+}
+
