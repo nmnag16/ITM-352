@@ -235,8 +235,6 @@ button:hover {
   position: relative;
 }
 
-/*w3 schools*/
-
 img.avatar {
   width: 500px;
   border-radius: 100px;
@@ -251,9 +249,6 @@ span.psw {
   float: right;
   padding-top: -3px;
 }
-
-/*w3 schools*/
-
 
 /* The Modal (background) */
 .modal {
@@ -289,24 +284,17 @@ span.psw {
   font-weight: bold;
 }
 
-
-/*w3 schools*/
-
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
 }
 
-/*w3 schools*/
-
 @-webkit-keyframes animatezoom {
   from {-webkit-transform: scale(0)} 
   to {-webkit-transform: scale(1)}
 }
   
-/*w3 schools*/
-
 @keyframes animatezoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
