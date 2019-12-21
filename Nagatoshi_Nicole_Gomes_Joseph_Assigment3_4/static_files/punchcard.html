@@ -35,7 +35,7 @@
 <body>
     <form name="punchcard_form" action="" method="GET">
         <br>
-
+<!--array for punch card photos-->
         <div class="display">
             <br>
             <Section class="card"><img onclick="changeImage()" id="movingCards" class="card"
@@ -87,6 +87,8 @@
                         "image": "./images/StampCardFull.jpg"
                     },
                 ];
+
+                /*displays photo and chnages image on click to next photo on array starting at 0 stamps and once it hits the finals stamp it will go  back to the begining of the array */
                 let index = 0;
                 function changeImage() {
                     if (index == 10) {

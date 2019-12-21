@@ -1,3 +1,4 @@
+/*made myself*/
 header{
     background-image: url(./images/Morning-Brew-Food-Shots-2788.jpg);
     background-position: .5px;
@@ -12,10 +13,12 @@ header{
     color: white;
 }
 
+/*made myself*/
 .logo{
   width: 120px;
 }
 
+/*made myself*/
 body {
     font-family: Arial, Helvetica,Brush Script MT ,Brush Script MT,sans-serif;
     background-image: url(./images/body.jpg);
@@ -144,6 +147,7 @@ li a:hover {
 }
 */
 
+/*made myself*/
 .navbar {
   overflow: hidden;
   background-color: black;
@@ -152,6 +156,7 @@ li a:hover {
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT, sans-serif;
 }
 
+/*made myself*/
 .navbar a {
   float: right;
   display: block;
@@ -162,16 +167,19 @@ li a:hover {
   font-size: 30px;
 }
 
+/*made myself*/
 .navbar a:hover {
   color:red;
 }
 
+/*made myself*/
 .main {
   padding: 16px;
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
 
+/*made myself*/
 #container{
     background-color:black;
     opacity: 0.8;
@@ -180,6 +188,7 @@ li a:hover {
 
 }
 
+/*made myself*/
 #menu{
     height: 100px;
 }
@@ -187,7 +196,7 @@ li a:hover {
 
 
 /*login and registration css*/
-
+/*made myself*/
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -198,6 +207,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
+/*w3 schools*/
 button {
   border: none;
     color: black;
@@ -211,6 +221,7 @@ button {
     font-size: medium;
 }
 
+/*w3 schools*/
 button:hover {
   background-color: rgb(138, 143, 138);
   color: white;
@@ -229,6 +240,7 @@ button:hover {
 
 
 /* Center the image and position the close button */
+/*w3 schools*/
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
@@ -242,11 +254,13 @@ img.avatar {
   border-radius: 100px;
 }
 
+/*made myself*/
 .container {
   padding: 28px;
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
 }
 
+/*w3 schools*/
 span.psw {
   float: right;
   padding-top: -3px;
@@ -254,7 +268,7 @@ span.psw {
 
 /*w3 schools*/
 
-
+/*made myself*/
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -271,6 +285,7 @@ span.psw {
   margin:auto;
 }
 
+/*made myself*/
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -279,6 +294,7 @@ span.psw {
   width: 52%; /* Could be more or less, depending on screen size */
 }
 
+/*made myself*/
 /* The Close Button (x) */
 .close {
   position: absolute;
@@ -323,12 +339,14 @@ span.psw {
   }
 }
 
+/*made myself*/
 /* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin: auto;
 }
 
+/*made myself*/
 /* Set a style for the submit button */
 .registerbtn {
   border: none;
@@ -343,6 +361,7 @@ hr {
     font-size: medium;
 }
 
+/*made myself*/
 .registerbtn:hover {
   background-color: rgb(138, 143, 138);
   color: white;
@@ -357,11 +376,13 @@ hr {
   position: relative;
 }
 
+/*w3 schools*/
 /* Add a blue text color to links */
 a {
   color: dodgerblue;
 }
 
+/*w3 school*/
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #f1f1f1;
@@ -369,6 +390,7 @@ a {
   width: 975px;
 }
 
+/*made myself*/
 .reg{
   background-color: rgba(255,255,255,.8);
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
@@ -377,6 +399,7 @@ a {
   padding: 10px;
 }
 
+/*made myself*/
 .reg2{
   background-color: rgba(255,255,255,.8);
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
@@ -385,6 +408,7 @@ a {
   padding: 10px;
 }
 
+/*made myself*/
 /*some general display items*/
 .display{
   background-color: rgba(255,255,255,.8);
@@ -396,16 +420,19 @@ a {
   height: 100%;
 }
 
+/*made myself*/
 h1{
   font-family: fantasy,cursive,Brush Script MT,Brush Script MT,sans-serif;
   font-size: 50px;
 }
 
+/*made myself*/
 h2{
   font-family: fantasy,cursive,Brush Script MT,Brush Script MT,sans-serif;
   font-size: 30px;
 }
 
+/*made myself*/
 .home {
   background-image: url(./images/home.jpg);
     background-position: .5px;
@@ -422,6 +449,7 @@ h2{
     position: relative;
 }
 
+/*made myself*/
 p{
   text-align: center;
   width: 700px;
@@ -430,10 +458,13 @@ p{
   font-size: 20px;
 }
 
+/*w3 schools*/
+
 * {
   box-sizing: border-box;
 }
 
+/*w3 schools*/
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
@@ -442,6 +473,7 @@ p{
   height: 400px; /* Should be removed. Only for demonstration */
 }
 
+/*w3 schools*/
 .column2 {
   float: left;
   width: 33%;
@@ -450,6 +482,7 @@ p{
   text-align: center;
 }
 
+/*w3 schools*/
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -457,11 +490,13 @@ p{
   clear: both;
 }
 
+/*w3 schools*/
 .icon{
   width: 35px;
   height: 35px;
 }
 
+/*made myself*/
 .contact{
   text-align: left;
   width: 700px;
@@ -470,11 +505,13 @@ p{
   font-size: 20px;
 }
 
+/*made myself*/
 .media{
   width: 100px;
   height: 100px;
 }
 
+/*made myself*/
 .card {
   display: block;
   margin-left: auto;
@@ -482,14 +519,14 @@ p{
   width: 90%;
 }
 
+/*made myself*/
 .height
 {
   height: 100%;
 }
 
-
+/*made myself*/
 /*Menu CSS*/
-
 .menuhead1{
   background: #333333;
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
@@ -502,6 +539,7 @@ p{
  opacity: 90%;
 }
 
+/*made myself*/
 .menuhead2{
   background: #333333;
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
@@ -514,6 +552,7 @@ p{
   opacity: 90%;
 }
 
+/*made myself*/
 .dispic1 {
   width: 40%;
   height: 40%;
@@ -521,6 +560,7 @@ p{
   margin: 58px;
 }
 
+/*made myself*/
 .dispic2 {
   width: 40%;
   height: 40%;
@@ -528,6 +568,7 @@ p{
   margin: 58px;
 }
 
+/*made myself*/
 .menubody1 {
   text-align: left;
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
@@ -535,6 +576,7 @@ p{
   width: 100%;
 }
 
+/*made myself*/
 .menubody2 {
   text-align: right;
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
@@ -542,6 +584,7 @@ p{
   width: 100%;
 }
 
+/*made myself*/
 .discription{
   font-family: cursive,fantasy,Brush Script MT,Brush Script MT,sans-serif;
   font-size: 20px;

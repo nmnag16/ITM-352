@@ -31,6 +31,7 @@
 <body>
     <main>
     <br>
+    <!--used code from w3 and my assignment 2-->
     <div class="reg">
             <form id="myForm" method="POST" action="reg">
             <div class="container">
@@ -73,40 +74,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var checkPassword = function(str)
   {
-    var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/; 
     return re.test(str);
   };
 
   var checkForm = function(e)
   {
-    if(this.username.value == "") {
+    if(this.username.value == "") { //if username  is blank put up error
       alert("Error: Username cannot be blank!");
       this.username.focus();
       e.preventDefault(); // equivalent to return false
       return;
     }
     re = /^\w+$/;
-    if(!re.test(this.username.value)) {
+    if(!re.test(this.username.value)) { //if username has values not fit in criteria then an werror will occor 
       alert("Error: Username must contain only letters, numbers and underscores!");
       this.username.focus();
       e.preventDefault();
       return;
     }
-    if(this.pwd1.value != "" && this.pwd1.value == this.pwd2.value) {
-      if(!checkPassword(this.pwd1.value)) {
+    if(this.pwd1.value != "" && this.pwd1.value == this.pwd2.value) { // if password is empty and the two passwords dont match then an error will occor 
+      if(!checkPassword(this.pwd1.value)) { //w3 schoools
         alert("The password you have entered is not valid!");
         this.pwd1.focus();
         e.preventDefault();
         return;
       }
     } else {
-      alert("Error: Please check that you've entered and confirmed your password!");
+      alert("Error: Please check that you've entered and confirmed your password!"); //if password doesnt mattch then  error will occor 
       this.pwd1.focus();
       e.preventDefault();
       return;
     }
-    alert("Both username and password are VALID!");
+    alert("Both username and password are VALID!"); // if all values are true then alert will come up  and you will be direcited to the next page 
   };
+
+  //w3 schools 
 
   var myForm = document.getElementById("myForm");
   myForm.addEventListener("submit", checkForm, true);
@@ -118,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var i = document.createElement("input");
     return "setCustomValidity" in i;
   }
-
+//w3 schools 
   if(supports_input_validity()) {
     var usernameInput = document.getElementById("field_username");
     usernameInput.setCustomValidity(usernameInput.title);
@@ -133,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     usernameInput.addEventListener("keyup", function(e) {
       usernameInput.setCustomValidity(this.validity.patternMismatch ? usernameInput.title : "");
     }, false);
-
+//w3 schools 
     pwd1Input.addEventListener("keyup", function(e) {
       this.setCustomValidity(this.validity.patternMismatch ? pwd1Input.title : "");
       if(this.checkValidity()) {
@@ -190,9 +193,11 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
 
         <script>
+          //w3 schools 
             // Get the modal
             var modal = document.getElementById('id01');
 
+            //w3 schools 
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
                 if (event.target == modal) {
